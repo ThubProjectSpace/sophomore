@@ -125,7 +125,7 @@ if(@$_SESSION['rollno']=='')
 
 
           <!-- page content -->
-        <div class="right_col" role="main" style="background-image: url(images/w2.png); height: 1000px;">
+        <div class="right_col" role="main" style="background-image: url(images/groovepaper.png); height: 1000px;">
            <?php
 
             

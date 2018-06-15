@@ -261,17 +261,17 @@ border:1px solid black;
 <!--news and notifications-->
  
 
-<div class="container-fluid" style="background-image: url('images/ora.png'); background-repeat:repeat-y; background-size: cover; padding:0px ">
+<div class="container-fluid" style="background-image: url('images/handmade.png'); background-repeat:repeat-y; background-size: cover; padding:0px ">
   <div class="row" id="row">
     <div id="child_row1" class="col-md-6 col-xs-12">
     <div  class=" text-center " >
-            <h3 style="color:#000;font-family:Times New Romans; padding:0px">
+            <h3 style="color:#000;font-family:Tekton Pro Ext; padding:0px">
               <i><b>Events</b></i>
             </h3>
           </div>
           
             <div class="col-md-12 events" id="child_row" style="border:1px solid grey; border-radius:10px; 
-     background:rgba(255,255,255,.1);">
+     background-color: #fff">
               <marquee id="test" behavior="scroll" direction="up" height="100%" scrolldelay="100" scrollamount="5" onMouseOver="document.all.test.stop()" onMouseOut="document.all.test.start()">
                 <?php 
                   $select_event = mysqli_query($conn, "select * from flash_news where category='event'");
@@ -281,7 +281,7 @@ border:1px solid black;
                   <div  id="event">
                     <h6><a style=""><?php echo $fetch_event['text_heading']; ?> </a></h6>
                     <p><a style="color:blue"><?php echo $fetch_event['textarea']; ?></a></p>
-                    <a href="<?php echo $fetch_event['link']?>" style="color:#ff4da6"><?php echo $fetch_event['link']; ?> </a>
+                    <a href="<?php echo $fetch_event['link']?>" style=" background: linear-gradient(to right, rgba(255,0,0,0), rgba(238,145,31));"><?php echo $fetch_event['link']; ?> </a>
                   </div>
                 <?php
                   }
@@ -297,7 +297,7 @@ border:1px solid black;
             </h3>
           </div>
           
-            <div class="col-md-12 updates" id="child_row" style="border:1px solid grey; border-radius:10px; background:rgba(255,255,255,.1);">
+            <div class="col-md-12 updates" id="child_row" style="border:1px solid grey; border-radius:10px; background-color: #fff">
               <marquee id="test1" behavior="scroll" direction="up" height="100%" scrolldelay="100" scrollamount="5" onMouseOver="document.all.test1.stop()" onMouseOut="document.all.test1.start()">
                 <?php 
                   $select_update = mysqli_query($conn, "select * from flash_news where category='update'");
@@ -307,7 +307,7 @@ border:1px solid black;
                     <div id="updates">
                       <h6 ><a style=""><?php echo $fetch_update['text_heading'];?></a></h6>
                       <p><a style="color:blue"><?php echo $fetch_update['textarea']?></a></p>
-                      <a href="<?php echo $fetch_update['link']?>" style="color:#FF00FF"><?php echo $fetch_update['link']?> </a>
+                      <a href="<?php echo $fetch_update['link']?>" style="background: linear-gradient(to right, rgba(255,0,0,0), rgba(238,145,31));"><?php echo $fetch_update['link']?> </a>
                     </div>  
                 <?php
                   }
@@ -322,7 +322,7 @@ border:1px solid black;
 
 <!-- About us-->
 <div class="row">
-<div class="w3-row-padding w3-grayscale"style="background-image: url('images/ora.png');">
+<div class="w3-row-padding w3-grayscale"style="background-image: url('images/handmade.png');">
   <div class="w3-container w3-padding-10s0" id="about">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color:#fcf8e3;"><b>About us:</b></h2>
     <p style="color:#000;"><b> SOPHOMORE SCOOP is a platform that allows students to store/upload his/her certificates in pdf or image data format and to download them according to their wish and need ,Each student will be given a login ID and password using which they can access their data.
